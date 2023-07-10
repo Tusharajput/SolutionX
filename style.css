@@ -1,0 +1,302 @@
+/* CSS for desktop screens */
+@media (min-width: 1024px) {
+  /* CSS rules specific to desktop screens */
+}
+
+/* CSS for tablet screens */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* CSS rules specific to tablet screens */
+}
+
+/* CSS for mobile screens */
+@media (max-width: 767px) {
+  /* CSS rules specific to mobile screens */
+}
+
+
+/* COOKIE consent starts */
+.wrapper {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  max-width: 365px;
+  background: #000000b2;
+  padding: 25px 25px 30px 25px;
+  border-radius: 15px;
+  box-shadow: 1px 7px 14px -5px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+.wrapper.hide {
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.8);
+  transition: all 0.3s ease;
+}
+::selection {
+  color: #ffffff;
+  background: #ffffff;
+}
+.wrapper img {
+  max-width: 50px;
+}
+.content header {
+  font-size: 30px;
+  color: #c5adc5;
+  font-weight: 600;
+}
+.content {
+  margin-top: 10px;
+}
+.content p {
+  color: #ffffff;
+  font-size: 18px;
+  margin: 5px 0 20px 0;
+}
+.content .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buttons button {
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 5px;
+  background: #000000;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.buttons button:hover {
+  transform: scale(0.97);
+}
+.buttons .item {
+  margin: 0 10px;
+}
+.buttons a {
+  color: #ffffff;
+}
+
+/* COOKIE consent ends here  */
+
+body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+ 
+}
+
+/* Navbar starts here */
+#navbar {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  border-radius: 33px;
+}
+
+#logo {
+  margin: 10px 34px;
+  filter: invert(100%);
+}
+
+#logo img {
+  height: 75px;
+  margin: 3px 6px;
+}
+
+#navbar::before {
+  content: "";
+  /* background-color: rgb(196, 185, 185); */
+  border-radius: 12px;
+  position: absolute;
+  top: 2px;
+  left: 022px;
+  height: 94.2%;
+  width: 51%;
+  z-index: -1;
+  opacity: 0.7;
+}
+#navbar ul {
+  display: flex;
+}
+
+#navbar ul li {
+  list-style: none;
+  /* font-size: 1.3rem; */
+  font-family: "Baloo Bhai";
+  font-size: 30px;
+}
+
+#navbar ul li a {
+  display: inline-block;
+  color: (#a15d15, #d72ba4);
+  text-align: left;
+  font-size: 26px;
+  padding: 20px 34px;
+  text-decoration: none;
+  border-radius: 12px;
+}
+
+li a:hover:not(.active) {
+  text-decoration: underline;
+  background-color:  #9aaeb1;
+}
+
+.active {
+  background-color: #c5adc5;
+}
+
+/* Navbar bar ends  */
+
+/* Loader/LOGO starts here  */
+.loader {
+  margin: 10px 34px;
+  display: inline-block;
+  animation: rotate 1s infinite;
+  height: 59px;
+  width: 50px;
+}
+
+.loader:before,
+.loader:after {
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 24px;
+  width: 24px;
+}
+
+.loader:before {
+  animation: ball1 1s infinite;
+  background-color: #cb2025;
+  box-shadow: 30px 0 0 #f8b334;
+  margin-bottom: 10px;
+}
+
+.loader:after {
+  animation: ball2 1s infinite;
+  background-color: #00a096;
+  box-shadow: 30px 0 0 #97bf0d;
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg) scale(0.8);
+    -moz-transform: rotate(0deg) scale(0.8);
+  }
+
+  50% {
+    -webkit-transform: rotate(360deg) scale(1.2);
+    -moz-transform: rotate(360deg) scale(1.2);
+  }
+
+  100% {
+    -webkit-transform: rotate(720deg) scale(0.8);
+    -moz-transform: rotate(720deg) scale(0.8);
+  }
+}
+
+@keyframes ball1 {
+  0% {
+    box-shadow: 30px 0 0 #f8b334;
+  }
+
+  50% {
+    box-shadow: 0 0 0 #f8b334;
+    margin-bottom: 0;
+    -webkit-transform: translate(15px, 15px);
+    -moz-transform: translate(15px, 15px);
+  }
+
+  100% {
+    box-shadow: 30px 0 0 #f8b334;
+    margin-bottom: 10px;
+  }
+}
+
+@keyframes ball2 {
+  0% {
+    box-shadow: 30px 0 0 #97bf0d;
+  }
+
+  50% {
+    box-shadow: 0 0 0 #97bf0d;
+    margin-top: -20px;
+    -webkit-transform: translate(15px, 15px);
+    -moz-transform: translate(15px, 15px);
+  }
+
+  100% {
+    box-shadow: 30px 0 0 #97bf0d;
+    margin-top: 0;
+  }
+}
+
+/* LOGO/Loader ends here  */
+/* CODE NOw BUTTON STARTS HERE  */
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 9.5%;
+  margin-left: 42%;
+  gap: 10px;
+  cursor: pointer;
+  padding: 0 10px;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px rgb(0, 0, 0);
+  text-transform: uppercase;
+  border: solid 3px black;
+  letter-spacing: 0px;
+  font-weight: 800;
+  font-size: 35px;
+  background-color: hsl(49deg 98% 60%);
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+button:active {
+  transform: scale(0.9);
+  transition: all 100ms ease;
+}
+
+button svg {
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+
+.play {
+  transition: all 0.5s ease;
+  transition-delay: 300ms;
+}
+
+button:hover svg {
+  transform: scale(3) translate(50%);
+}
+
+.now {
+  position: absolute;
+  left: 0;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+
+button:hover .now {
+  transform: translateX(10px);
+  transition-delay: 300ms;
+}
+
+button:hover .play {
+  transform: translateX(200%);
+  transition-delay: 300ms;
+}
+
+/* BUTTON code now ends  */
